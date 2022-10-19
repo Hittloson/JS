@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=F, initial-scale=1.0">
+    <title>Resgistration  Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Resgistration Form</h1>
+    <p>Please fill out the form with the necessary information </p>
+    <form action="">
+        <fieldset >
+            <label for="first-name">First Name: <input type="text" id="first--name" name="First Name" class="inline"></label>
+            <label for="last-name">Last Name: <input type="text" id="last-name" name="Last Name" class="inline"></label>
+            <label for="email">Email: <input type="email" id="email" name="Email" class="inline"></label>
+            <label for="password">Password: <input type="password" id="password" namme="Password" pattern="[a-z0-5]{8,} required" class="inline"></label>
+        </fieldset>
+        <fieldset>
+            <label for="personal-account"><input type="radio" id="personal-account" name="Account"> Personal Account</label>
+            <label for="business-account"><input type="radio" id="business-account" name="Account"> Business Account</label>
+            <label for=""><input type="checkbox"> I accept the <a href="#"> terms and conditions</a></label>
+            
+        </fieldset>
+        <fieldset>
+            <label for="file">Upload a profile picture: <input type="file" id="file" class="inline"></label>
+            <label for="age">Input your age (in years): <input type="number" id="age" min="15" max="110" class="inline"></label>
+            <label for="referer" >How did you hear about us?
+                <select name="referer" id="referer" class="inline">
+                    <option value="">(Choose One)</option>
+                    <option value="1">Friends</option>
+                    <option value="2">Advetisement</option>
+                    <option value="3">Our website</option>
+                    <option value="44">Social medial</option>
+                </select>
+            </label>
+            <label for="bio">Provide a bio: <textarea name="bio" id="bio" cols="30" rows="3" placeholder="I love coding in the night" class="inline"></textarea></label>
+        </fieldset>
+        <input type="submit" value="Submit">
+    </form>
+    
+</body>
+</html>
