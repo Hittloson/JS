@@ -17,6 +17,7 @@ form{
     max-width: 500px;
     min-width: 300px;
     margin: 0 auto;
+    padding: 2rem;
 }
 
 fieldset{
